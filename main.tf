@@ -12,8 +12,7 @@ provider "azurerm" {
 }
 
 module "resource_group_storage" {
-  source               = "Klemjl/resource_group_storage/azurerm"
-  version              = "1.0.0"
+  source               = "github.com/Klemjl/terraform-azurerm-resource_group_storage?ref=v1.0.0"
   resource_group_name  = "mate-resources1"
   storage_account_name = "matestorage3639"
   location             = "West US"
